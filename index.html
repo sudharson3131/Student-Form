@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stdudent_Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 p-6 flex flex-col items-center">
+
+    <!-- student form -->
+    <h2 class="text-2xl font-bold mb-4 text-blue-600">STUDENT FORM</h2>
+    <form id="studentForm" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
+       <table class="table-auto">
+          <tr>
+              <td class="py-2"><label class="font-medium">Name:</label></td>
+              <td><input type="text" id="studentName"class="border border-gray-300 p-2 rounded w-full"></td>
+          </tr>
+          <tr>
+              <td class="py-2"><label class="font-medium">Age:</label></td>
+              <td><input type="number" id="age" class="border border-gray-300 p-2 rounded w-full"></td>
+          </tr>
+          <tr>
+              <td class="py-2"><label class="font-medium">Gender:</label></td>
+              <td>
+                  <input type="radio" id="male" name="gender" value="Male" class="mr-1" >
+                  <label for="male" class="mr-4">Male</label>
+                  <input type="radio" id="female" name="gender" value="Female" class="mr-1">
+                  <label for="female">Female</label>
+              </td>
+          </tr>
+          <tr>
+              <td class="py-2"><label class="font-medium">Course:</label></td>
+              <td><input type="text" id="course" class="border border-gray-300 p-2 rounded w-full" ></td>
+          </tr>
+          <tr>
+              <td class="py-2"><label class="font-medium">Email:</label></td>
+              <td><input type="email" id="email" class="border border-gray-300 p-2 rounded w-full"  ></td>
+          </tr>
+          <tr>
+              <td colspan="2" class="text-center pt-4">
+              <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Add Student</button>
+              </td>
+          </tr>
+      </table>
+    </form>
+    <!-- student list -->
+    <h2 class="text-xl font-bold mt-8 text-gray-700">STUDENT LIST</h2>
+    <table class="w-full max-w-4xl mt-4 bg-white shadow-lg rounded-lg border border-gray-300">
+       <tr class="bg-blue-600 text-white">
+           <th class="p-3 border border-gray-300">Name</th>
+           <th class="p-3 border border-gray-300">Age</th>
+           <th class="p-3 border border-gray-300">Gender</th>
+           <th class="p-3 border border-gray-300">Course</th>
+           <th class="p-3 border border-gray-300">Email</th>
+           <th class="p-3 border border-gray-300">Action</th>
+       </tr>
+       <tbody id="studentTableBody" class="text-center">
+           <!-- New rows will be added here -->
+       </tbody>
+    </table>
+    <script src="./script.js"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
